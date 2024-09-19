@@ -13,7 +13,7 @@ from udacity.common.final_project_sql_statements import SqlQueries
 default_args = {
     'owner': 'AnhVu',
     'depends_on_past': False,
-    'start_date': pendulum.now(),
+    'start_date': datetime(2018, 11, 1),
     'retries': 3,
     'retry_delay': timedelta(minutes=5),
     'catchup': False,
