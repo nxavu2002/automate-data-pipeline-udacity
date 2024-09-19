@@ -40,9 +40,12 @@
 * `Begin_execution` & `Stop_execution`
 
     Dummy operators representing DAG start and end point 
-* `Create_tables`
+* `Create_tables_operator`
 
-    Create tables in Redshift
+    Create tables (staging, fact, dimension) if not exists in Redshift
+
+* `Drop_tables-operator`
+    Drop tables (staging, fact, dimension) if exists in Redshift
 #### 2. `final_project` DAG overview
 
 <img src="./assets/final_project_dag_graph2.png" width=90% height=50%>
@@ -60,13 +63,6 @@
 * `Run_data_quality_checks`
 
     Run data quality checks to ensure no empty tables
-  
-  * `Create_tables-operator`
-
-    Create tables (staging, fact, dimension) if not exists in databases
-
-  * `Create_tables-operator`
-    Drop tables (staging, fact, dimension) if exists in databases
 
 ### Execution
 1. Create S3 bucket and copy data from source
