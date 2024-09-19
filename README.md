@@ -45,7 +45,9 @@
     Create tables (staging, fact, dimension) if not exists in Redshift
 
 * `Drop_tables-operator`
+
     Drop tables (staging, fact, dimension) if exists in Redshift
+  
 #### 2. `final_project` DAG overview
 
 <img src="./assets/final_project_dag_graph2.png" width=90% height=50%>
